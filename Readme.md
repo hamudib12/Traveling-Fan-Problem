@@ -285,12 +285,12 @@ git clone https://github.com/hamudib12/Traveling-Fan-Problem
 cd Traveling-Fan-Problem
 ```
 
-3. **Install Dependencies:**
+2. **Install Dependencies:**
 ```shell
 pip install -r requirements.txt
 ```
 
-5. **Run the Application:**
+3. **Run the Application:**
 ```shell
 python main.py
 ```
