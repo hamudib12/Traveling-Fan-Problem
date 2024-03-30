@@ -274,11 +274,9 @@ Defines classes for UI elements such as buttons, panels, and dropdowns.
 - **Data Files:**
   Real data that we collected
 
----
 
 ## Run The App:
 
----
 
 1. **Clone the Repository:**
 
