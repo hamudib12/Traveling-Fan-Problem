@@ -282,7 +282,7 @@ Defines classes for UI elements such as buttons, panels, and dropdowns.
 
 ```shell
 git clone https://github.com/hamudib12/Traveling-Fan-Problem
-cd Traveling_Fan_Problem
+cd Traveling-Fan-Problem
 ```
 
 3. **Install Dependencies:**
