@@ -63,7 +63,7 @@ A distance matrix has been generated, providing the distances between each pair 
 We began by tackling the TFP head-on, leveraging the power of a genetic algorithm to find the optimal itinerary for attending matches at stadiums across different cities or countries. With careful planning and strategic thinking, we achieved success in optimizing the fan's journey.
 
 ### Designing the Interface:
-The game's interface was crafted to mirror the journey of the traveling fan. On the home page, players are greeted with the real-world locations of stadiums, setting the stage for their adventure. The dynamic display showcases the stadiums' names, creating a sense of anticipation and excitement.
+The game's interface was crafted to mirror the journey of the traveling fan. On the home page, players are greeted with the real-world locations of stadiums, setting the stage for their adventure. The dynamic display showcases the stadiums' names.
 
 ### Implementing Gameplay Features:
 - Key gameplay features were introduced to enhance the player experience:
