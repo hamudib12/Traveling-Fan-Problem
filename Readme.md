@@ -2,7 +2,7 @@
 <p align="center">
 <img src="data/Images/WorldCup2026.jpeg" align="center">
 </p>
-<h3 align="center">Find Best Path Using Genetic Algorithm! ✨</h3>
+<h3 align="center">maximizing the number of matches! ✨</h3>
 
 <h4 align="center"><br/> Mohamad Briq <br/> Morad Taya <br/> Marwan Sakas </h4>
 
@@ -12,23 +12,20 @@
 
 ## Introduction
 
----
 
 ### What is the Traveling Fan Problem?
 
-The Traveling Fan Problem (TFP) is a unique optimization challenge inspired by the excitement and fervor surrounding major sporting events, particularly the FIFA World Cup. Imagine a passionate fan who dreams of attending every match of the tournament, which in this case, the FIFA World Cup 2026 held across multiple countries - the United States, Mexico, and Canada. Unlike previous World Cup where stadiums were relatively close (Longest distance to travel between World Cup Qatar 2022 is 55km), the 2026 edition presents a significant logistical challenge due to the vast distances between venues. The objective of the Traveling Fan Problem is to devise an efficient itinerary for our avid supporter, maximizing the number of matches attended while minimizing travel time and distance.
+The Traveling Fan Problem (TFP) is a unique optimization challenge inspired by the excitement and fervor surrounding major sporting events, particularly the FIFA World Cup. Imagine a passionate fan who dreams of attending every match of the tournament, which in this case, the FIFA World Cup 2026 held across multiple countries - the United States, Mexico, and Canada. Unlike previous World Cup where stadiums were relatively close (Longest distance to travel between World Cup Qatar 2022 stadiums was 55km), the 2026 edition presents a significant logistical challenge due to the vast distances between venues. The objective of the Traveling Fan Problem is to devise an efficient itinerary for our avid supporter, maximizing the number of matches attended while minimizing travel time and distance.
 
 ### Genetic Algorithm (GA) Overview
 
-To tackle the Traveling Fan Problem, we employ a Genetic Algorithm (GA), a powerful heuristic search technique inspired by the principles of natural selection and genetics. GAs are particularly well-suited for solving optimization problems where traditional exact methods become computationally infeasible, as is often the case with large-scale combinatorial problems like the Traveling Salesman Problem (TSP), which shares similarities with our Traveling Fan Problem.
+To tackle the Traveling Fan Problem, we employ a Genetic Algorithm (GA), a powerful heuristic search technique inspired by the principles of natural selection and genetics. GAs are part of a broader class of algorithms known as Evolutionary Algorithms, which mimic the process of natural evolution to solve complex optimization problems. They are particularly well-suited for addressing optimization problems where traditional exact methods become computationally infeasible, as is often the case with large-scale combinatorial problems like the Traveling Salesman Problem (TSP), which shares similarities with our Traveling Fan Problem.
 
-In our implementation, the GA starts with a population of potential solutions, each representing a unique itinerary for our traveling fan. Through successive generations of evolution, involving processes such as selection, crossover, and mutation, the algorithm iteratively refines these solutions, gradually converging towards an optimal or near-optimal itinerary. By leveraging the power of evolution-inspired search, our GA offers a practical and scalable approach to addressing the complex logistical challenges posed by the Traveling Fan Problem.
+In our implementation, the GA starts with a population of potential solutions, each representing a unique itinerary for our traveling fan. Through successive generations of evolution, involving processes such as selection, crossover, and mutation, the algorithm iteratively refines these solutions, gradually converging towards an optimal or near-optimal itinerary. By leveraging the power of evolution-inspired search, our GA, as a part of evolutionary algorithms, offers a practical and scalable approach to addressing the complex logistical challenges posed by the Traveling Fan Problem.
 
----
 
 ## Problem Formulation
 
----
 
 The Traveling Fan Problem (TFP) is an optimization challenge centered around a passionate fan's desire to attend matches at multiple stadiums, typically during a major sports event such as the FIFA World Cup. The objective is to plan an itinerary that allows the fan to visit each stadium while minimizing travel distance.
 
@@ -36,7 +33,7 @@ The Traveling Fan Problem (TFP) is an optimization challenge centered around a p
 
 For the Traveling Fan Problem project, the following data has been gathered:
 
-### Stadiums
+#### Stadiums
 - SoFi Stadium: Located at (33.9535° N, -118.3391° W)
 - MetLife Stadium: Located at (40.8136° N, -74.0746° W)
 - AT&T Stadium: Located at (32.7482° N, -97.0926° W)
@@ -54,21 +51,16 @@ For the Traveling Fan Problem project, the following data has been gathered:
 - BMO Field: Located at (43.6334° N, -79.4183° W)
 - BC Place: Located at (49.2768° N, -123.1113° W)
 
-### Distance Matrix
+#### Distance Matrix
 A distance matrix has been generated, providing the distances between each pair of stadiums. This matrix aids in determining the travel distances and optimizing the fan's itinerary for attending matches.
 
 <img src="data/Images/distance_table.png" align="center">
 
----
 
 ## Evolution from Problem to Game
 
---- 
 ### Solving the Real Problem:
 We began by tackling the TFP head-on, leveraging the power of a genetic algorithm to find the optimal itinerary for attending matches at stadiums across different cities or countries. With careful planning and strategic thinking, we achieved success in optimizing the fan's journey.
-
-### Conceptualizing the Game:
-Drawing upon our triumph over the TFP, we envisioned a game that would immerse players in the thrill of optimization and adventure. The idea was to recreate the essence of the TFP within an interactive and engaging gaming experience.
 
 ### Designing the Interface:
 The game's interface was crafted to mirror the journey of the traveling fan. On the home page, players are greeted with the real-world locations of stadiums, setting the stage for their adventure. The dynamic display showcases the stadiums' names, creating a sense of anticipation and excitement.
@@ -79,7 +71,7 @@ The game's interface was crafted to mirror the journey of the traveling fan. On 
     - To open the side bar and access additional functionalities, press the Enter key.
     - To exit the game, press the Escape key.
 
-- Key gameplay features were introduced to enhance the player experience. A "Generate" button allows users to generate random stadium locations, triggering the algorithm to solve the new problem. A "Reset" button enables players to revert to the original data, while a "Select" button empowers them to adjust the number of generations for the algorithm.
+- A "Generate" button allows users to generate random stadium locations, triggering the algorithm to solve the new problem. A "Reset" button enables players to revert to the original data, while a "Select" button empowers them to adjust the number of generations for the algorithm.
 
 <img src="data/Images/features.png" align="center">
 
@@ -94,16 +86,15 @@ To further enhance player immersion, a "Theme" button allows users to choose the
 
 <img src="data/Images/Theme.jpg" align="center" width="700" height="100">
 
---- 
+### Note: 
+The default limited Generation will be 300, Population Size also 300, and Mutation Probability will be 0.02 (more on that later)
 
 ## Solution Description - Genetic Algorithm (EA)
 
----
-
-### Overview
+### Overview:
 The Genetic Algorithm (GA), a fundamental component of **evolutionary algorithms**, offers a powerful solution to the Traveling Fan Problem (TFP). This algorithm aims to optimize the itinerary of a fan attending matches at multiple stadiums while minimizing travel time and distance. By leveraging principles of natural selection and genetic operations, the GA efficiently explores and evolves potential solutions to find the optimal route.
 
-### Key Components
+### Key Components:
 - Population Generation:
 The algorithm initializes a population of genomes, each representing a potential itinerary. These genomes are randomly generated, ensuring diversity in the initial population.
 
@@ -116,7 +107,7 @@ Through a process inspired by natural selection, the algorithm selects the fitte
 - Evolution and Optimization:
 Successive generations undergo evolution as the algorithm iteratively selects, reproduces, and evolves genomes towards better solutions. This iterative process continues until a termination condition is met, such as reaching a specified number of generations or achieving a desired level of optimization.
 
-### Usage
+### Usage:
 
 - Game Integration:
 The run function is specifically designed for integration into the game. It progresses the algorithm step by step, providing real-time feedback to the player regarding the optimization process.
@@ -124,82 +115,77 @@ The run function is specifically designed for integration into the game. It prog
 - Evolutionary Analysis:
 For evolutionary analysis and experimentation, the run_evolution function is available. This function executes the algorithm for a specified number of generations, allowing researchers to study the algorithm's performance under different conditions such as varying generation limits and mutation probabilities.
 
-### Note
+### Note:
 The algorithm's performance can be further optimized and customized by adjusting parameters such as population size, mutation probability, and generation limit.
 
----
 
-## Examined Results
+## Evolutionary Analysis And Experimentation
 
----
 
 Results of running the genetic algorithm on the real stadium data are presented below for different generation limits, population size and mutation probabilities. The algorithm was executed **15 times**, and the results are averaged to provide a representative outcome. The results displayed are from the **10th**.
 The real reason behind these experiments is written in the **note** above ☺  
 
-##### We can start by examine different limited generation:
+### We can start by examining different limited generation:
 
 **Note** : number of populations is 100. 
 
 1) **100 Limited Generation:**
 
-<img src="data/Images/100Gen.png" align="center">
+<img src="data/Images/100Gen.png" align="center" width="500" height="500">
 
 2) **500 Limited Generation:**
 
-<img src="data/Images/500Gen.png" align="center">
+<img src="data/Images/500Gen.png" align="center" width="500" height="500">
 
 3) **1000 Limited Generation:**
 
-<img src="data/Images/1000Gen.png" align="center">
+<img src="data/Images/1000Gen.png" align="center" width="500" height="500">
 
-**Result :** we can see that with small number of populations, we didn't get so close to the optimal route. 
   
-#### Next Step: change the population size
+### Next Step: change the population size
 
 **Note** : number of Limited Generation is 300 (default of the game).
 
 1) **100 Population Size:**
 
-<img src="data/Images/100Population.png" align="center">
+<img src="data/Images/100Population.png" align="center" width="500" height="500">
 <p align="center">Best Distance = 15561.310000000001</p>
 
 2) **300 Population Size:**
 
-<img src="data/Images/300Population.png" align="center">
+<img src="data/Images/300Population.png" align="center" width="500" height="500">
 <p align="center">Best Distance = 14827.61 <br/> cֹonverging to best on generation ~ 46 </p>
 
 
 3) **500 Population Size:**
 
-<img src="data/Images/500Population.png" align="center">
+<img src="data/Images/500Population.png" align="center" width="500" height="500">
 <p align="center">Best Distance = 14827.61 <br/> cֹonverging to best on generation ~ 39 </p>
 
-#### Last Step: find best mutation probability:
+### Last Step: find best mutation probability:
 
 **Note** : number of Limited Generation is 300 (default of the game), and population size is 300.
 
 1) **0.02 Mutation Probability:**
 
-<img src="data/Images/0.02mutation.png" align="center">
+<img src="data/Images/0.02mutation.png" align="center" width="500" height="500">
 <p align="center">Best Distance = 14827.61 <br/> cֹonverging to best on generation ~ 39 </p>
 
 2) **0.06 Mutation Probability:**
 
-<img src="data/Images/0.06mutation.png" align="center">
+<img src="data/Images/0.06mutation.png" align="center" width="500" height="500">
 <p align="center">Best Distance = 14827.61 <br/> cֹonverging to best on generation ~ 60 </p>
 
 
 3) **0.09 Population Size:**
 
-<img src="data/Images/0.09mutation.png" align="center">
+<img src="data/Images/0.09mutation.png" align="center" width="500" height="500">
 <p align="center">Best Distance = 14827.61</p>
 <p align="center">Best Distance = 14827.61 <br/> cֹonverging to best on generation ~ 105 </p>
 
----
 
 ## Conclusion
 
----
 
 Through systematic experimentation with different parameters in the genetic algorithm, we aimed to find the most efficient configuration for solving the Traveling Fan Problem (TFP) using real stadium data. The results of our investigation shed light on the impact of limited generation, population size, and mutation probability on the algorithm's performance.
 
@@ -220,16 +206,13 @@ Through systematic experimentation with different parameters in the genetic algo
   
   By adhering to these recommendations, users can leverage the genetic algorithm effectively to efficiently solve the TFP and plan optimal itineraries for attending matches at multiple stadiums.
 
----
-
 ## About The Code:
 
----
-#### Overview:
+### Overview:
 
 The application utilizes Pygame for visualization purposes and employs an object-oriented approach to implement and manage the genetic algorithm, ensuring effective route optimization.
 
-#### Files Description: 
+### Files Description: 
 - **manager.py:**
 Contains the Manager class responsible for managing the main logic of the program, including handling the genetic algorithm, rendering the graphical interface, and managing user interactions.
 
@@ -264,7 +247,7 @@ Initializes the user interface components, including buttons and panels, using p
 - **UI.ui.py:**
 Defines classes for UI elements such as buttons, panels, and dropdowns.
 
-#### Important Functions
+### Important Functions
 
 - **Genetic Algorithm Functions:**
 
