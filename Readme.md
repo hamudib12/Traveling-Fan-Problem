@@ -23,6 +23,26 @@ To tackle the Traveling Fan Problem, we employ a Genetic Algorithm (GA), a power
 
 In our implementation, the GA starts with a population of potential solutions, each representing a unique itinerary for our traveling fan. Through successive generations of evolution, involving processes such as selection, crossover, and mutation, the algorithm iteratively refines these solutions, gradually converging towards an optimal or near-optimal itinerary. By leveraging the power of evolution-inspired search, our GA, as a part of evolutionary algorithms, offers a practical and scalable approach to addressing the complex logistical challenges posed by the Traveling Fan Problem.
 
+## Table of Contents
+
+1. [Problem Formulation](#problem-formulation)
+2. [Evolution from Problem to Game](#evolution-from-problem-to-game)
+   - [Solving the Real Problem](#solving-the-real-problem)
+   - [Designing the Interface:](#designing-the-interface:)
+   - [Implementing Gameplay Features](#implementing-gameplay-features)
+   - [Real-Time Feedback and Information](#real-time-feedback-and-information)
+   - [Theme Selection](#theme-selection)
+3. [Solution Description - Genetic Algorithm (EA)](#Solution-Description)
+   - [Overview](#overview)
+   - [Key Components](#key-components)
+   - [Usage](#usage)
+4. [Evolutionary Analysis And Experimentation](#evolutionary-analysis-and-experimentation)
+5. [Conclusion](#conclusion)
+6. [Code](#code)
+   - [Files Description](#files-description)
+   - [Important Functions](#important-functions)
+7. [Installation And Running Instructions](#installation-and-running-instructions)
+
 
 ## Problem Formulation
 
@@ -88,6 +108,7 @@ To further enhance player immersion, a "Theme" button allows users to choose the
 
 ### Note: 
 The default limited Generation will be 300, Population Size also 300, and Mutation Probability will be 0.02 (more on that later)
+
 
 ## Solution Description - Genetic Algorithm (EA)
 
@@ -188,19 +209,20 @@ The real reason behind these experiments is written in the **note** above ☺
 
 Through systematic experimentation with different parameters in the genetic algorithm, we aimed to find the most efficient configuration for solving the Traveling Fan Problem (TFP) using real stadium data. The results of our investigation shed light on the impact of limited generation, population size, and mutation probability on the algorithm's performance.
 
-- #### Population Size Variation
+- ### Population Size Variation
   The population size played a crucial role in the algorithm's performance. Smaller populations, such as 100, exhibited slower convergence and often resulted in suboptimal solutions. Conversely, larger populations, such as 500, accelerated convergence, leading to improved solutions in fewer generations. Notably, a population size of 300 struck a balance between computational efficiency and solution quality, converging to the best route in approximately 39 to 46 generations.
 
-- #### Mutation Probability Assessment
+- ### Mutation Probability Assessment
   Exploring different mutation probabilities revealed varying impacts on convergence speed and solution quality. Lower mutation probabilities, such as 0.02, facilitated faster convergence to the optimal route within approximately 39 generations. On the other hand, higher mutation probabilities, such as 0.06 and 0.09, delayed convergence, requiring more generations to reach the best solution.
 
-- #### Recommendations
+- ### Recommendations
   Based on our experimentation, we recommend the following configuration for optimal performance in solving the TFP:
 
   1) Population Size: Maintain a population size of around 300 for a balance between convergence speed and solution quality.
   2) Mutation Probability: Opt for a lower mutation probability, such as 0.02, to expedite convergence without sacrificing solution quality.
   
   By adhering to these recommendations, users can leverage the genetic algorithm effectively to efficiently solve the TFP and plan optimal itineraries for attending matches at multiple stadiums.
+  
 
 ## About The Code:
 
@@ -271,7 +293,7 @@ Defines classes for UI elements such as buttons, panels, and dropdowns.
   Real data that we collected
 
 
-## Run The App:
+## Installation And Running Instructions:
 
 
 1. **Clone the Repository:**
