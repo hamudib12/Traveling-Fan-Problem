@@ -26,21 +26,27 @@ In our implementation, the GA starts with a population of potential solutions, e
 ## Table of Contents
 
 1. [Problem Formulation](#problem-formulation)
+   
 2. [Evolution from Problem to Game](#evolution-from-problem-to-game)
    - [Solving the Real Problem](#solving-the-real-problem)
    - [Designing the Interface](#designing-the-interface)
    - [Implementing Gameplay Features](#implementing-gameplay-features)
    - [Real-Time Feedback and Information](#real-time-feedback-and-information)
    - [Theme Selection](#theme-selection)
+     
 3. [Solution Description - Genetic Algorithm (EA)](#Solution-Description)
    - [Overview](#overview)
    - [Key Components](#key-components)
    - [Usage](#usage)
+     
 4. [Evolutionary Analysis And Experimentation](#evolutionary-analysis-and-experimentation)
+   
 5. [Conclusion](#conclusion)
+   
 6. [Code](#code)
    - [Files Description](#files-description)
    - [Important Functions](#important-functions)
+     
 7. [Installation And Running Instructions](#installation-and-running-instructions)
 
 
