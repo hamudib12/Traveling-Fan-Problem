@@ -294,5 +294,28 @@ pip install -r requirements.txt
 python main.py
 ```
 
+#### or:
+
+```shell
+git clone https://github.com/hamudib12/Traveling-Fan-Problem
+cd Traveling-Fan-Problem
+```
+
+2. **Setup Virtual Environment:**
+```shell
+pip install -r requirements.txt
+```
+
+3. **Install Dependencies:**
+```shell
+python -m venv .venv
+source .venv/bin/activate # On Windows use: .venv\Scripts\activate
+```
+
+4. **Run the Application:**
+```shell
+python main.py
+```
+
 ![GamePreview](data/Images/animation.gif)
 
