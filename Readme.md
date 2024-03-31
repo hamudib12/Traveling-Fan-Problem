@@ -28,7 +28,7 @@ In our implementation, the GA starts with a population of potential solutions, e
 1. [Problem Formulation](#problem-formulation)
 2. [Evolution from Problem to Game](#evolution-from-problem-to-game)
    - [Solving the Real Problem](#solving-the-real-problem)
-   - [Designing the Interface](#designing-the-interface:)
+   - [Designing the Interface](#designing-the-interface)
    - [Implementing Gameplay Features](#implementing-gameplay-features)
    - [Real-Time Feedback and Information](#real-time-feedback-and-information)
    - [Theme Selection](#theme-selection)
