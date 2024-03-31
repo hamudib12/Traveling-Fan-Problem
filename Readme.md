@@ -303,7 +303,6 @@ Defines classes for UI elements such as buttons, panels, and dropdowns.
 
 
 1. **Clone the Repository:**
-
 ```shell
 git clone https://github.com/hamudib12/Traveling-Fan-Problem
 cd Traveling-Fan-Problem
@@ -321,18 +320,19 @@ python main.py
 
 #### or:
 
+1. **Clone the Repository:**
 ```shell
 git clone https://github.com/hamudib12/Traveling-Fan-Problem
 cd Traveling-Fan-Problem
 ```
 
-2. **Install Dependencies:**
+2. **Setup Virtual Environment:**
 ```shell
 python -m venv .venv
 source .venv/bin/activate # On Windows use: .venv\Scripts\activate
 ```
 
-3. **Setup Virtual Environment:**
+3. **Install Dependencies:**
 ```shell
 pip install -r requirements.txt
 ```
