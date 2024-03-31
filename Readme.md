@@ -180,7 +180,6 @@ The real reason behind these experiments is written in the **note** above ☺
 3) **0.09 Population Size:**
 
 <img src="data/Images/0.09mutation.png" align="center" width="500" height="500">
-<p align="center">Best Distance = 14827.61</p>
 <p align="center">Best Distance = 14827.61 <br/> cֹonverging to best on generation ~ 105 </p>
 
 
