@@ -125,7 +125,7 @@ The algorithm's performance can be further optimized and customized by adjusting
 Results of running the genetic algorithm on the real stadium data are presented below for different generation limits, population size and mutation probabilities. The algorithm was executed **15 times**, and the results are averaged to provide a representative outcome. The results displayed are from the **10th**.
 The real reason behind these experiments is written in the **note** above ☺  
 
-### We can start by examining different limited generation:
+### We start by examining different limited generation:
 
 **Note** : number of populations is 100. 
 
@@ -187,9 +187,6 @@ The real reason behind these experiments is written in the **note** above ☺
 
 
 Through systematic experimentation with different parameters in the genetic algorithm, we aimed to find the most efficient configuration for solving the Traveling Fan Problem (TFP) using real stadium data. The results of our investigation shed light on the impact of limited generation, population size, and mutation probability on the algorithm's performance.
-
-- #### Limited Generation Analysis
-  When examining the effect of limited generation, we observed that increasing the number of generations led to better convergence towards the optimal route. Notably, with only 100 limited generations, the algorithm struggled to find solutions close to the optimal route. However, as the number of limited generations increased to 500 and 1000, the algorithm demonstrated significant improvement, achieving routes closer to the optimal solution.
 
 - #### Population Size Variation
   The population size played a crucial role in the algorithm's performance. Smaller populations, such as 100, exhibited slower convergence and often resulted in suboptimal solutions. Conversely, larger populations, such as 500, accelerated convergence, leading to improved solutions in fewer generations. Notably, a population size of 300 struck a balance between computational efficiency and solution quality, converging to the best route in approximately 39 to 46 generations.
