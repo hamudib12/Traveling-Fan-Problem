@@ -27,7 +27,7 @@ In our implementation, the GA starts with a population of potential solutions, e
 ## Problem Formulation
 
 
-The Traveling Fan Problem (TFP) is an optimization challenge centered around a passionate fan's desire to attend matches at multiple stadiums, typically during a major sports event such as the FIFA World Cup. The objective is to plan an itinerary that allows the fan to visit each stadium while minimizing travel distance.
+The Traveling Fan Problem (TFP) is an optimization challenge centered around a passionate fan's desire to attend matches at multiple stadiums, typically during a major sports event such as the FIFA World Cup. The objective is to plan an itinerary that allows the fan to visit each of the 16 stadiums while minimizing travel distance.
 
 ### Data Gathered
 
