@@ -4,7 +4,6 @@
 </p>
 <h3 align="center">maximizing the number of matches! ✨</h3>
 
-<h4 align="center"><br/> Mohamad Briq <br/> Morad Taya <br/> Marwan Sakas </h4>
 
 <p align="center">
 <img src="data/Images/genetic_algo.png" align="center" width="500" height="100">
